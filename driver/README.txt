@@ -45,3 +45,33 @@ muy habituade a usar como ciertos prints u otros. Pero recuerda, estas programan
 el programa. 
 
 Tu primer driver podras encontrarlo aca con el nombre de "my_first_driver.c" muchos exitos y disfruta
+
+
+En la siguiente seccion podras encontrar un link a un video explicando algunas cuestiones importantes para comprender 
+mas acerca de leer y escribir informacion en los registros del device y como comprender la utilidad y la forma de utilizar 
+los BARs Base Address Registers. 
+
+BARs y funciones de lectura o escritura
+Explicacion por Ernesto
+1 julio 2021
+https://www.youtube.com/watch?v=wYgF6U4Idpk 
+
+Tabla de Contenidos del video 
+
+    1:51________Explicación Base Address Registers (BAR)
+    5:44________Elección y asignación de registros de class y subclass del dispositivo
+    10:20_______Explicación de drivers en general y un esqueleto de un driver
+    15:35_______Explicación ejemplo device y sus registros 
+    26:15_______Ejemplo de driver 
+    27:35_______Character Device del driver y su conexión con una biblioteca para comunicación
+    32:15_______Ejemplos de código de programación de Linux (Kernel.org y elixir bootlin)
+    36:04_______Búsqueda dentro de los archivos en el disco duro en Linux por terminal
+    40:07_______Retomando el esqueleto del driver y explicación sobre drivers
+    53:31_______Como obtener las direcciones de los BAR de nuestros drivers
+    59:20_______Volvemos con el ejemplo del driver
+    1:03:15_____Divagación en el ejemplo del driver, BAR vacios
+    1:07:52_____Explicación de los probe y remove y su relación con el lsmod
+    1:10:46_____La primera interacción entre el driver y el device 
+    1:12:05_____Side effects para implementar funcionalidades en el device
+    1:24:05_____Explicación y documentación de la función ioread#()
+    1:28:44_____Conclusiones
