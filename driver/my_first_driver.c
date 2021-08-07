@@ -26,6 +26,9 @@
 #include <linux/uaccess.h>
 
 
+u_int16_t bar0, bar1;
+
+
 // Herramienta util para testeos tempranos del driver
 #define DRIVER_VERBOSE
 
@@ -48,7 +51,7 @@ static struct
 
 } device;
 
-
+#define BAR0
 
 
 // tabla de ID del PCI device
@@ -216,8 +219,16 @@ struct my_driver_priv
 
 static int __init mypci_driver_init(void)
 {
+    // Seteo de las direcciones del BAR0 y BAR1
+    u_int64_t offset_bar0 = 0x10;
+    pci_read_config_word(device.pdev, offset_bar0, &bar0);
+
+    u_int64_t offset_bar1 = 0x14;
+    pci_read_config_word(device.pdev, offset_bar1, &bar1);  
+
     //Register new PCI driver
     return pci_register_driver(&my_driver);
+
 }
 
 static void __exit mypci_driver_exit(void)

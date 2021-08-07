@@ -44,7 +44,8 @@ ya que los errores los veras hasta estar en la simulacion, como por ejemplo, met
 muy habituade a usar como ciertos prints u otros. Pero recuerda, estas programando fuera del entorno donde vas a correr
 el programa. 
 
-Tu primer driver podras encontrarlo aca con el nombre de "my_first_driver.c" muchos exitos y disfruta
+Tu primer driver podras encontrarlo aca con el nombre de "my_first_driver.c" recuerda actualizar los Makefiles para aprovecharlo
+muchos exitos y disfruta
 
 
 En la siguiente seccion podras encontrar un link a un video explicando algunas cuestiones importantes para comprender 
