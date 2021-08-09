@@ -5,10 +5,18 @@ PCI son las siglas de Peripheral Component Inter connect (Interconexión de Comp
 ## Algunos dispositivos que se pueden conectar a un PCI son:
 
 Tarjetas de expansión de Bluetooth
+
 Tarjetas de expansión de Wifi
+
 Tarjetas para más puertos USB
+
 SSD con protocolo NVMe
+
 Tarjetas de sonido
+
 Tarjetas gráficas
+
 Tarjetas de red
+
 Capturadoras
+
