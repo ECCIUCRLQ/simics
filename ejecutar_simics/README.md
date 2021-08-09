@@ -25,7 +25,7 @@ Una vez realizado los pasos anteriores, se ejecutará Simics de la siguiente man
     c //o continue como en la siguiente imagen
 ```
 
-![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/ejecutar_simics/Ejecucci%C3%B3n%20de%20Simics.png)
+![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/ejecutar_simics/Ejecuci%C3%B3n%20de%20Simics.png)
 
 Esto nos permitirá trabajar con el ambiente de Simics para crear, probar y ejecutar nuestros distintos programas, por ejemplo el driver y el programa de usuario, entre otros.
 
