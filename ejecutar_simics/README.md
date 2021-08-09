@@ -20,8 +20,8 @@ Una vez realizado los pasos anteriores, se ejecutara Simics de la siguiente mane
 
 c o continue
 
-![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/Ejecucci%C3%B3n%20de%20Simics/Ejecucci%C3%B3n%20de%20Simics.png)
+![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/ejecutar_simics/Ejecucci%C3%B3n%20de%20Simics.png)
 
 Esto nos permitirá trabajar con el ambiente de Simics para crear, probar y ejecutar nuestros distintos programas, por ejemplo el driver y el programa de usuario, entre otros.
 
-![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/Ejecucci%C3%B3n%20de%20Simics/Terminales%20Simics.png)
+![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/ejecutar_simics/Terminales%20Simics.png)
