@@ -3,7 +3,7 @@
 ## Cargar ID
 Lo primero que se debe identificar a la hora que querer conectar nuestro dispositivo PCI con el driver, son el ***Vendor ID*** y el ***Device ID***, estás pueden ser localizadas en el banco: _PCI config_, como se muestra en el ejemplo:
 
-![ID's del dispositivo](https://raw.githubusercontent.com/ECCIUCRLQ/simics/main/Conexi%C3%B3n%20PCI-Driver/IdentificarID.jpeg)
+![ID's del dispositivo](./IdentificarID.jpeg)
 
 Una vez los atributos fueron localizados, el siguiente paso corresponde a cargar estas dirrecciones de memoria en el driver, para esto, en nuestro archivo del driver, identificaremos al estructura estática (_static struct_): "pci_device_id", correspondiente al atributo _id_table_,  en la cuál, meteremos las siguientes instrucciones:
 
