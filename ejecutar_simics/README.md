@@ -6,7 +6,10 @@ Lo primero que se debe hacer es "setear" el workspace.
 ## Paso 2: Correr Simics
 
 Para correr Simics se necesita el comando:
+
+``` C
 ./simics targets/qsp-x86/firststeps.simics
+```
 
 ## Paso 3, 4 y 5
 
