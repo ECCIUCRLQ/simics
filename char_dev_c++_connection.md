@@ -26,7 +26,7 @@ int open(struct inode *inode, struct file *file);
 ```
 
 ### Función read del character device
-El read es un método que puede generar problemas o comportamiento no deseado si no entendemos bien que valores se deben retornar y cuales son los parámetros. Además, hay que tener cuidado de no sobrecargar la pila con vectores muy grandes mientras preparamos los datos que queremos copiar al usuario, ya que un stack overflow en este punto podría ocasionar un Kernel Panic.
+El read es un método que puede generar problemas o comportamiento no deseado si no entendemos bien que valores se deben retornar y cuales son los parámetros. Además, hay que tener cuidado de no sobrecargar la pila con vectores muy grandes mientras preparamos los datos que queremos copiar al usuario, ya que un stack overflow en este punto podría ocasionar un Kernel panic.
 ```cpp
 ssize_t read(struct file *file, char __user *buf, size_t len, loff_t *offset);
 ```
