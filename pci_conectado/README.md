@@ -1,7 +1,7 @@
 
 # Comprobar dispositivo PCI conectado
 
-El primer paso para comprobar que si dispositivo PCI está conectado, es
+El primer paso para comprobar que su dispositivo PCI está conectado, es
 conectarlo. Para una detallada explicación siga los pasos de la correspondiente
 sección. Una vez que haya conectado su dispositivo, inicie la simulación simics
 con su script.
