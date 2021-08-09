@@ -19,7 +19,7 @@ Para estos pasos consultar el siguiente enlance donde se explica como conectar e
 
 ## Paso 6: Ejecutar Simics
 
-Una vez realizado los pasos anteriores, se ejecutara Simics de la siguiente manera:
+Una vez realizado los pasos anteriores, se ejecutará Simics de la siguiente manera:
 
 ```C
     c //o continue como en la siguiente imagen
