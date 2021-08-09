@@ -1,0 +1,60 @@
+# ponen el craff que se les paso con las dependencias
+$disk0_image = "qsp-with-gcc-make.craff"
+
+# target con el sistema operativo
+run-command-file "targets/qsp-x86/qsp-clear-linux.simics"
+
+# este codigo es basicamente conectar el DEVICE a algun puerto PCI disponible en la maquina
+# Puerto de la computadora: board.mb.nb.pcie_slot[0]
+# Puerto del device: my_pci_device.pci
+
+#En la siguiente linea se tiene que el nombre del dispositivo es "my-device-comp", sin embargo, es necesario que usted le cambie el nombre al de su dispositivo actual.
+load-module my-device-comp
+
+load-module sample-components
+create-sample-pci-card name = "nombre_de_mi_dispositivo" integer_attribute = 13
+connect "board.mb.sb.pci_slot[0]" dispositivo.pci_bus
+instantiate-components
+
+# para habilitar logs sobre el device
+my_pci_device.my_device.log-level 4
+
+# con este script-branch pueden cargar el codigo del driver automaticamente al sistema operativo dentro de Simics
+script-branch {
+    $sercon = board.serconsole.con
+
+    # este es el simics-agent para subir archivos
+    $sercon.wait-for-string "simics@cl-qsp ~ $ "
+    $sercon.input "simics-agent name=bond &\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "\n"
+    
+    #En la siguiente linea se crea una carpeta virtual donde se guardara su driver para el dispositivo pci de Simics, que en este caso seria una carpeta llamada "demo"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "mkdir demo\n"
+
+    $agent = (start-agent-manager)
+    $agent.list-agents
+    $agent.connect-to-agent
+    matic0.pwd
+    
+    # estos 2 comandos suben el Makefile y .c
+    # para este caso, el source code esta en un directorio en el workspace de Simics "driver_src"
+    matic0.upload driverSimics/Makefile /home/desktop/simics/ws
+    matic0.upload driverSimics/driver-pci.c /home/desktop/simics/ws
+    
+    # este comando de upload se comporta asi
+    #matic0.upload <archivo de origen> <destino dentro del OS en Simics>
+    #matic0.upload driver-pci.c /home/desktop/simics/ws
+    
+    # con estos comandos pueden automatizar procesos dentro del OS en Simics
+    # por ejemplo, aqui compila de una vez haciendo el make y luego instala el driver
+
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "ls\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "cd demo\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "make\n"
+    $sercon.wait-then-write "simics@cl-qsp ~ $ " "sudo insmod test_pci_module.ko\n"
+}
