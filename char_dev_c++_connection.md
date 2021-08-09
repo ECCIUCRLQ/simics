@@ -2,7 +2,7 @@
 
 Si el character device fue creado correctamente, siguiendo los pasos descritos en la sección correspondiente (agregar link), se debe haber creado un archivo ubicado en la ruta **/dev/** con el nombre del módulo. Aunque el character device parezca un tema muy complejo, es un simple archivo que, en lugar de tener el comportamiento por defecto al abrir, leer, escribir y cerrar, tiene un comportamiento especial definido por nosotros mediante la estructura **file_operations**, a la cual podemos asignarle punteros a nuestras propias funciones. 
 
-Sabiendo ya que el character device es un archivo, la manera de interactuar con él es la misma en la que interactuamos con cualquier otro archivo, con la diferencia de que son nuestras funciones asignadas a la estructura file operations las que se llaman por debajo. Como programadores, esto conlleva responsabilidades dado que trabajando a nivel de kernel, un error como por ejemplo, un stack overflow, podría ocasionar un kernel panic y generar muchos problemas. En casos menos extremos podria generarse comportamientos que no son los esperados si no se conoce bien los valores de retorno o los parámetros que asigna el sistema operativo a nuestras funciones.
+Sabiendo ya que el character device es un archivo, la manera de interactuar con él es la misma en la que interactuamos con cualquier otro archivo, con la diferencia de que son nuestras funciones asignadas a la estructura file operations las que se llaman por debajo. Como programadores, esto conlleva responsabilidades dado que trabajando a nivel de kernel, un error como por ejemplo, un stack overflow, podría ocasionar un [kernel panic](https://es.wikipedia.org/wiki/Kernel_panic) y generar muchos problemas. En casos menos extremos podria generarse comportamientos que no son los esperados si no se conoce bien los valores de retorno o los parámetros que asigna el sistema operativo a nuestras funciones.
 
 ### Ejemplo en C++: read
 
@@ -26,7 +26,7 @@ int open(struct inode *inode, struct file *file);
 ```
 
 ### Función read del character device
-El read es un método que puede generar problemas o comportamiento no deseado si no entendemos bien que valores se deben retornar y cuales son los parámetros. Además, hay que tener cuidado de no sobrecargar la pila con vectores muy grandes mientras preparamos los datos que queremos copiar al usuario, ya que un stack overflow en este punto podría ocasionar un [kernel panic](https://es.wikipedia.org/wiki/Kernel_panic).
+El read es un método que puede generar problemas o comportamiento no deseado si no entendemos bien que valores se deben retornar y cuales son los parámetros. Además, hay que tener cuidado de no sobrecargar la pila con vectores muy grandes mientras preparamos los datos que queremos copiar al usuario, ya que un stack overflow en este punto podría ocasionar un Kernel Panic.
 ```cpp
 ssize_t read(struct file *file, char __user *buf, size_t len, loff_t *offset);
 ```
