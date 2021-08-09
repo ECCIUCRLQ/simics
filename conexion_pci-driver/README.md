@@ -52,7 +52,7 @@ Una vez obtenemos las direcciones bar del dispositivo, podemos enlazarlos con lo
 
 ## Leer configuración de los registros del dispositivo
 
-Lo último que debemos hacer, sería cargar la información de los registros de configuración del dispositivo PCI en nuestra clase "my_driver_probe", con ayuda de la instrucción":
+Lo último que debemos hacer, sería cargar la información de los registros de configuración del dispositivo PCI en nuestra clase "my_driver_probe", con ayuda de la instrucción:
 
 ```C
 	pci_read_config_word(**puntero al dispositivo**, PCI_VENDOR_ID,
