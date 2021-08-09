@@ -40,6 +40,7 @@ Por esta razón es importante conocer los siguientes conceptos:
 **Interfaz de usuario:**
 
 > "Se refiere a todo el código en un sistema operativo que vive fuera del kernel."(McCarty. 2015, párr.9)
+
 Puede ser gráfica o no. Es la parte que le permite al usuario interactuar con la máquina.
 
 
@@ -55,12 +56,12 @@ El driver tiene dos piezas importantes el módulo de "character device", que per
 
 * ### Módulos del kernel:
 
-..* Tipos:
-...* Character device
-...* PCI/ PCI-express
-...* Compiladores: cualquier código de kernel se compila de una forma distinta a la acostumbrada, para esto ver la entrada: [Makefile para Kernel](https://github.com/ECCIUCRLQ/simics/blob/main/Makefile.png)
-...* Ejecución: Se debe instanciar e instalar en el kernel para poder ejecutarlo.
-...* Depuración: Se puede utilizar un "printk", que es un "print" para driver, con el fin de visualizar errores. 
+  * Tipos:
+   - Character device
+   - PCI/ PCI-express
+  * Compiladores: cualquier código de kernel se compila de una forma distinta a la acostumbrada, para esto ver la entrada: [Makefile para Kernel](https://github.com/ECCIUCRLQ/simics/blob/main/Makefile.png)
+  * Ejecución: Se debe instanciar e instalar en el kernel para poder ejecutarlo.
+  * Depuración: Se puede utilizar un "printk", que es un "print" para driver, con el fin de visualizar errores. 
 
 
 ## Referencias:
