@@ -21,7 +21,9 @@ Para estos pasos consultar el siguiente enlance donde se explica como conectar e
 
 Una vez realizado los pasos anteriores, se ejecutara Simics de la siguiente manera:
 
-c o continue
+```C
+    c //o continue como en la siguiente imagen
+```
 
 ![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/ejecutar_simics/Ejecucci%C3%B3n%20de%20Simics.png)
 
