@@ -12,4 +12,4 @@ El driver steps es un archivo de tipo simics el cual permite al programador agil
 
 ## Referencias:
 
-Ulate E.(01 de julio 2021). pi ensambla 2021. Discord.com. Recuperado de: https://discord.gg/ux4Ytf2z y https://drive.google.com/drive/folders/1N437-iWyyPR_42byIdK2virJIRG4es-f?usp=sharing
+Ulate E.(01 de julio 2021). pi ensambla 2021. Discord.com. Recuperado de: https://discord.com/channels/687678344535343114/847166900467531807/862482909863608320 y https://drive.google.com/drive/folders/1N437-iWyyPR_42byIdK2virJIRG4es-f?usp=sharing
