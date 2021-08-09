@@ -13,7 +13,7 @@ Una vez los atributos fueron localizados, el siguiente paso corresponde a cargar
 ```
 _Imagen de ejemplo:_
 
-![Cargar ID's del dispositivo](https://raw.githubusercontent.com/ECCIUCRLQ/simics/main/Conexi%C3%B3n%20PCI-Driver/CargarID.jpeg)
+![Cargar ID's del dispositivo](./CargarID.jpeg)
 
 ## Cargar direcciones del dispositivo en el Driver
 Luego tenemos que identificar la clase _my_driver_probe_, que es la que se encarga de realizar los llamados a funciones y enlazar los bancos de memoria (ver anexo de mapeo de bar). Esta recibe como parámetro: "*pdev" (que corresponde al puntero del dispositivo).
@@ -37,7 +37,7 @@ Por consiguiente cargamos en otra variable las regiones de los campos de memoria
 ```
 _Imagen de ejemplo:_
 
-![Cargar bars del dispositivo](https://raw.githubusercontent.com/ECCIUCRLQ/simics/main/Conexi%C3%B3n%20PCI-Driver/Cargarbars.jpeg)
+![Cargar bars del dispositivo](./Cargarbars.jpeg)
 ## Asignar los punteros bar en el Driver
 Una vez obtenemos las direcciones bar del dispositivo, podemos enlazarlos con los bar que poseemos en el driver, esto con ayuda de las instrucciones:
 
@@ -48,7 +48,7 @@ Una vez obtenemos las direcciones bar del dispositivo, podemos enlazarlos con lo
 ```
 *Imagen de ejemplo:*
 
-![Remapear los bar en el driver](https://raw.githubusercontent.com/ECCIUCRLQ/simics/main/Conexi%C3%B3n%20PCI-Driver/EnlazarBars.jpeg)
+![Remapear los bar en el driver](./EnlazarBars.jpeg)
 
 ## Leer configuración de los registros del dispositivo
 
@@ -60,6 +60,6 @@ Lo último que debemos hacer, sería cargar la información de los registros de 
 ```
  *Imagen ejemplo:*
  
-![Leer registros de configuración del dispositivo](https://raw.githubusercontent.com/ECCIUCRLQ/simics/main/Conexi%C3%B3n%20PCI-Driver/dataRead.jpeg)
+![Leer registros de configuración del dispositivo](./dataRead.jpeg)
 
 Con esto, ya podremos realizar los llamados a las funciones en el driver (_my_driver_probe_).
