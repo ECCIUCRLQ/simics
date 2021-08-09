@@ -6,9 +6,9 @@ PCI son las siglas de Peripheral Component Inter connect (Interconexión de Comp
 
 Tarjetas de expansión de Bluetooth
 
-Tarjetas de expansión de Wifi
-
 Tarjetas para más puertos USB
+
+Tarjetas de expansión de Wifi
 
 SSD con protocolo NVMe
 
