@@ -30,3 +30,15 @@ Una vez realizado los pasos anteriores, se ejecutara Simics de la siguiente mane
 Esto nos permitirá trabajar con el ambiente de Simics para crear, probar y ejecutar nuestros distintos programas, por ejemplo el driver y el programa de usuario, entre otros.
 
 ![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/ejecutar_simics/Terminales%20Simics.png)
+
+## Terminales
+
+**Simics Target Consoles**: Aquí se mostrarán los targets que se cargaron.
+
+**Simics Control**: Aquí se puede editar distintas configuraciones que tiene Simics.
+
+**Graphics console**: Aquí se mostrarán todas las distintas impresiones que se hagan en general.
+
+**serial console**: Aquí se escribirán los distintos comandos que se necesiten para hacer modificaciones en Simics.
+
+
