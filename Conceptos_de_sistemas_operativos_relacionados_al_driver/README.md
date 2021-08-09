@@ -11,16 +11,16 @@ En palabras más simples, un sistema operativo es una interfaz o intermediario e
 
 ## Características o responsabilidades de un sistema operativo:
 
-*Manejo de memoria.
-*Manejo del CPU.
-*Manejo de la interacción con los dispositivos de entrada y salida.
-*Configuración de registros.
-*Manejo de archivos.
-*Seguridad.
-*Rendimiento.
-*Logs.
-*Detección de errores.
-*Coordinación.
+* Manejo de memoria.
+* Manejo del CPU.
+* Manejo de la interacción con los dispositivos de entrada y salida.
+* Configuración de registros.
+* Manejo de archivos.
+* Seguridad.
+* Rendimiento.
+* Logs.
+* Detección de errores.
+* Coordinación.
 
 ## El sistema operativo a usar: Linux.
 
@@ -55,12 +55,12 @@ El driver tiene dos piezas importantes el módulo de "character device", que per
 
 * ### Módulos del kernel:
 
-    *Tipos:
-        *Character device
-        *PCI/ PCI-express
-    *Compiladores: cualquier código de kernel se compila de una forma distinta a la acostumbrada, para esto ver la entrada: [Makefile para Kernel](https://github.com/ECCIUCRLQ/simics/blob/main/Makefile.png)
-    *Ejecución: Se debe instanciar e instalar en el kernel para poder ejecutarlo.
-    *Depuración: Se puede utilizar un "printk", que es un "print" para driver, con el fin de visualizar errores. 
+..* Tipos:
+...* Character device
+...* PCI/ PCI-express
+...* Compiladores: cualquier código de kernel se compila de una forma distinta a la acostumbrada, para esto ver la entrada: [Makefile para Kernel](https://github.com/ECCIUCRLQ/simics/blob/main/Makefile.png)
+...* Ejecución: Se debe instanciar e instalar en el kernel para poder ejecutarlo.
+...* Depuración: Se puede utilizar un "printk", que es un "print" para driver, con el fin de visualizar errores. 
 
 
 ## Referencias:
