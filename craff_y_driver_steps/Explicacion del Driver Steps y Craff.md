@@ -4,7 +4,7 @@ El qsp-with-gcc-make.craff es un disco duro con las características necesarias 
 
 Para la descarga de este craff, use el siguiente enlace:
 
-[qsp-with-gcc-make.craff](https://drive.google.com/file/d/1il895cVi0AtaKh-zS79zp8AJ6Fedeug7/view?usp=sharing)
+[qsp-with-gcc-make.craff](https://drive.google.com/drive/folders/1N437-iWyyPR_42byIdK2virJIRG4es-f?usp=sharing)
 
 # ¿Para qué sirve el Driver_steps.simics?
 
