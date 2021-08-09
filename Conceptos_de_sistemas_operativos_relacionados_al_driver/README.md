@@ -67,4 +67,5 @@ El driver tiene dos piezas importantes el módulo de "character device", que per
 ## Referencias:
 
 Adeva, R. (2021). Historia y todo lo que debes saber sobre un sistema operativo. ADSLZone. Retrieved 8 August 2021, from https://www.adslzone.net/reportajes/software/que-es-sistema-operativo/.
+
 McCarty, S. (2015). Architecting Containers Part 1: Why Understanding User Space vs. Kernel Space Matters. Red Hat. Retrieved 8 August 2021, from https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters.
