@@ -1,5 +1,5 @@
 # Bancos de memoria
-La función de los bancos de memoria es la de almacenar y distribuir datos fácilmente en el dispositivo implementado. Un banco necesario en los dispositivos pci es el pci_config, el cual posee funciones tales como definir el vendor_id y device_id del dispositivo pci, así como definir las direcciones de memoria de los registros base_address. El siguiente es un ejemplo de cómo se vería esto en un sample-pci-device de simics:
+La función de los bancos de memoria es la de almacenar y distribuir datos fácilmente en el dispositivo implementado. Un banco necesario en los dispositivos pci es el pci_config, el cual posee funciones tales como definir el vendor_id y device_id del dispositivo PCI, así como definir las direcciones de memoria de los registros base_address. El siguiente es un ejemplo de cómo se vería esto en un sample-pci-device de simics:
 
     bank pci_config {
       /* This attribute should contain a list of all BAR registers */
