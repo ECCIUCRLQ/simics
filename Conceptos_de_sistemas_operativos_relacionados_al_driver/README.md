@@ -24,7 +24,7 @@ En palabras más simples, un sistema operativo es una interfaz o intermediario e
 
 ## El sistema operativo a usar: Linux.
 
-Linux es una distribución de un sistema operativo de tipo "open source". Este tiene la característica de que dentro de él **todo es un archivo**.
+Linux es una distribución de un sistema operativo de tipo "open source". Este tiene la característica de que dentro de el **todo es un archivo**.
 
 ## Espacio kernel y espacio usuario:
 
@@ -59,7 +59,7 @@ El driver tiene dos piezas importantes el módulo de "character device", que per
   * Tipos:
     - Character device
     - PCI/ PCI-express
-  * Compiladores: cualquier código de kernel se compila de una forma distinta a la acostumbrada, para esto ver la entrada: [Makefile para el driver](https://github.com/ECCIUCRLQ/simics/blob/main/Makefile.png)
+  * Compiladores: cualquier código de kernel se compila de una forma distinta a la acostumbrada, para esto ver la entrada: [Makefile para el driver](https://github.com/ECCIUCRLQ/simics/blob/main/Makefile/Makefile.png)
   * Ejecución: Se debe instanciar e instalar en el kernel para poder ejecutarlo.
   * Depuración: Se puede utilizar un "printk", que es un "print" para driver, con el fin de visualizar errores. 
 
