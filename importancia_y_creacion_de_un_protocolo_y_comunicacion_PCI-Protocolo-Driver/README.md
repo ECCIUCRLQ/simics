@@ -4,7 +4,7 @@ Victor Chacón B81988
 
 El protocolo es una parte especial en la creación de cualquier programa o dispositivo, es el encargado de decirle al dispositivo p programa lo que tiene que hacer en base a lo que el usuario envie e indicarle al usuario si se realizó la acción o no y en el caso que no se realice porque no se puedo hacer. El protocolo en si no es un programa aparte y no hay una forma fija de crearlo ya que siempre será distinto dependiendo del uso que queramos darle.
 
-![alt text](image.jpg)
+![alt text](https://github.com/ECCIUCRLQ/simics/blob/main/importancia_y_creacion_de_un_protocolo_y_comunicacion_PCI-Protocolo-Driver/EjemploVisualProtocolo.jpeg)
 
 En la imagen anterior el protocolo se ve representado con las flechas. El driver recibe la información de usuario y mediante el protocolo se le envía al dispositivo la tarea que debe de realizar.
 
