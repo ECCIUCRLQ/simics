@@ -34,6 +34,6 @@ Así mismo, se pueden crear bancos de memoria para las funciones que requieran s
 
 La siguiente es una referencia útil a la hora de configurar el banco para el archivo WAVE, ya que contiene detalladamente las partes que conforman este archivo de audio y su tamaño en bytes, así como los bytes de offset correspondientes. Esto es necesario ya que se debe mapear un registro para cada parte del archivo WAVE y así poder manipularlo posteriormente.
 
-![wave_format](wav-sound-format.gif)
+![wave_format](wav-sound-format.jpg)
 
 http://soundfile.sapp.org/doc/WaveFormat/
